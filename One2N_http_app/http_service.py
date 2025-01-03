@@ -1,10 +1,10 @@
 import boto3
 from botocore.exceptions import ClientError
-
+from flask import Flask, jsonify
 app = Flask(__name__)
 
 # Replace with your bucket name
-BUCKET_NAME = "one2n-project-sonam"
+BUCKET_NAME = "http-s3-bucket"
 
 # Initialize S3 client
 s3_client = boto3.client('s3')
