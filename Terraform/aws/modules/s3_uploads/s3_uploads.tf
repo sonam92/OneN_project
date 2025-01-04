@@ -5,7 +5,7 @@ variable "bucket_name" {
 }
 variable "local_dir" {
   description = "Path to the local directory to upload"
-  default     = "./modules/s3_uploads/copyData"
+  default     = "./modules/s3_uploads/copyObject"
 }
 
 # Upload a file to a "directory" in the S3 bucket
